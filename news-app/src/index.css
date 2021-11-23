@@ -2,6 +2,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    background-color: rgb(218, 218, 218);
 }
 
 
@@ -12,7 +14,7 @@ body {
 }
 
 .showcase .overlay {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.5);
   height: 400px;
   display: flex;
   flex-direction: column;

@@ -19,8 +19,10 @@ const SearchForm = ({ searchText }) => {
 
                 <button
                     type="submit"
-                    className="green-400 py-1 px-2 rounded-r-lg text-white"
-                >Search</button>
+                    className="bg-green-200 py-1 px-2 rounded-r-lg text-black"
+                >
+                    Search
+                </button>
             </form>
         </div >
     )
