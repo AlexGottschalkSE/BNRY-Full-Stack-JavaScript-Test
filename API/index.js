@@ -32,6 +32,30 @@ app.get('/bitcoin', (req, res) => {
         );
 })
 
+//Handle /Elon Musk API request
+app.get('/Elon-Musk', (req, res) => {
+    //Make API call to news API
+    axios.get(`https://newsapi.org/v2/  everything?q=Elon-Musk&apiKey=${process.env.NEWS_API_KEY}`)
+        .then((newsAPIResponse) => {
+            //Return news API response
+            teststring = newsAPIResponse.data
+            res.send(newsAPIResponse.data)
+        }).catch(err => console.log(err)
+        );
+})
+
+//Handle /Joe-Biden API request
+app.get('/Joe-Biden', (req, res) => {
+    //Make API call to news API
+    axios.get(`https://newsapi.org/v2/everything?q=Joe-Biden&apiKey=${process.env.NEWS_API_KEY}`)
+        .then((newsAPIResponse) => {
+            //Return news API response
+            teststring = newsAPIResponse.data
+            res.send(newsAPIResponse.data)
+        }).catch(err => console.log(err)
+        );
+})
+
 //Handle /search API request
 app.get('/search/:q', (req, res) => {
     //Make API call to news API
