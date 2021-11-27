@@ -10,7 +10,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-//Handle /news API request
+//Handle /headlines API request
 app.get('/headlines', (req, res) => {
     //Make API call to news API
     axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEWS_API_KEY}`)
